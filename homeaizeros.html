@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aizeros · Digital Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    
+    <style>
+        @font-face {
+            font-family: 'ClashDisplay';
+            src: url('font/ClashDisplay-Semibold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .scrollbar-custom::-webkit-scrollbar {
+            height: 12px;
+        }
+        .scrollbar-custom::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 9999px;
+        }
+        .scrollbar-custom::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 9999px;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+        }
+        .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        clash: ['ClashDisplay', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-black text-white">
+    
+    <div class="absolute inset-0 w-full h-full z-0">
+        <img src="pict/bghome.png" class="w-full h-full object-cover rotate-180" alt="background">
+        <div class="absolute inset-0 bg-black/15"></div>
+        <div class="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-black/10"></div>
+        <div class="absolute inset-0 backdrop-blur-[2px]"></div>
+    </div>
+
+    <div class="w-[1440px] h-[932px] relative z-10 mx-auto my-0 overflow-hidden">
+        <div class="px-16 py-8 relative h-full">
+
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center h-[53px]">
+                    <img src="pict/logoaizeros.png" alt="Aizeros Logo" class="w-[243px] h-[38.12px] object-contain">
+                </div>
+
+                <div class="flex items-center space-x-2 h-[53px]">
+                    <a href="#" class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">Home</a>
+                    <a href="#" class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">Services</a>
+                    <a href="#" class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">Portfolio</a>
+                    <a href="#" class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">About us</a>
+                </div>
+
+                <div class="flex items-center space-x-3 h-[53px]">
+                    <a href="#" class="text-white font-semibold hover:text-white/80 transition-all duration-300 flex items-center justify-center whitespace-nowrap text-[15px] leading-[100%] tracking-tight">Contact Us</a>
+                    <img src="pict/bulet2 5.svg" alt="" class="w-auto h-auto">
+                </div>
+            </nav>
+
+            <div class="border-b border-white/10 mt-4"></div>
+
+            <div class="grid grid-cols-2 gap-20 mt-12">
+                <div class="relative">
+                    <div class="relative">
+                        <div class="font-clash font-semibold text-white/95 select-none drop-shadow-lg [text-shadow:0_0_30px_rgba(0,0,0,0.5)] text-[278px] leading-[232px] tracking-[-0.03em] w-[1033px] h-[186px] -ml-2">Aizeros®</div>
+                        
+                        <div class="flex items-center gap-4 mt-8 ml-1 mb-52">
+                            <div class="w-[31px] h-0 border-t-2 border-white rotate-180"></div>
+                            
+                            <div>
+                                <div class="font-clash font-semibold text-white/80 uppercase drop-shadow-lg text-[18px] leading-[100%] tracking-normal w-[195px] h-3">DIGITAL AGENCY</div>
+                                <div class="w-[195px] h-px bg-white/20 mt-3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 max-w-md">
+                        <p class="text-white/90 drop-shadow-lg mb-28 text-[20px] leading-[28px] tracking-tight font-semibold">/ We help startups and businesses grow faster through AI-driven UI/UX design, branding, development, and digital marketing — all under one roof.</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mt-8">
+                        <a href="#" class="group flex items-center justify-between text-white font-semibold transition-all duration-300 border border-white/60 hover:bg-white hover:text-black w-[168px] h-12 rounded-[1000px] py-2 pl-5 pr-1 text-sm tracking-tight">
+                            <span>View Our Works</span>
+                            <div class="w-6 h-6 rounded-full flex items-center justify-center group-hover:bg-black/20">
+                                <div class="w-[6px] h-[6px] rounded-full bg-white group-hover:bg-black"></div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="group flex items-center justify-between text-white font-semibold transition-all duration-300 border border-white/60 hover:bg-white hover:text-black w-[168px] h-12 rounded-[1000px] py-2 pl-5 pr-1 text-sm tracking-tight">
+                            <span class="text-base leading-6 tracking-tighter font-semibold">Connect Us</span>
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#111111]">
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4.5H14M14 4.5L10 0.5M14 4.5L10 8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative"></div>
+            </div>
+        </div>
+        <div class="absolute bottom-16 right-12 z-20 w-[690px]">
+            <div class="overflow-x-auto pb-4 scrollbar-custom">
+                <div class="flex space-x-4 min-w-max">
+                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px]">
+                        <img src="pict/scrollbghome.png" alt="scroll background" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+                    </div>
+                    
+                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+                    </div>
+                    
+                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+                    </div>
+                    
+                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+                    </div>
+                    
+                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 right-0 w-100 h-100 bg-white/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
+    </div>
+</body>
+</html>

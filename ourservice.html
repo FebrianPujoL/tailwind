@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bather's Own · Tailwind only - Services</title>
+  <!-- Clash Display from fontshare -->
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&display=swap" rel="stylesheet">
+  <!-- Inter from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .font-clash {
+      font-family: 'Clash Display', sans-serif;
+    }
+    .font-inter-medium {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .tracking--3 {
+      letter-spacing: -0.03em;
+    }
+    .fade-edges {
+      mask-image: linear-gradient(90deg, transparent, black 15%, black 85%, transparent);
+      -webkit-mask-image: linear-gradient(90deg, transparent, black 15%, black 85%, transparent);
+    }
+  </style>
+</head>
+<body class="m-0 p-0 text-white overflow-x-hidden"
+      style="background: linear-gradient(0deg, #0404D7, #0404D7), linear-gradient(98.58deg, #11B7FC -37.97%, #0013FF 19.46%, #0013FF 81.26%, #11B7FC 114.31%); background-blend-mode: normal;">
+
+  <div class="w-full max-w-7xl mx-auto px-4 md:px-8 pt-8 md:pt-12 flex flex-col h-[843px]">
+    
+    <div class="flex items-center justify-between mx-auto w-full shrink-0 mb-6 md:mb-8 max-w-[1320px] h-[52px] opacity-100">
+      
+      <div class="flex items-center w-[574px] h-[43px] opacity-100">
+        <h1 class="font-clash font-semibold text-white leading-none tracking--3 text-left w-full text-[64px] leading-[64px]">
+          Our Services
+        </h1>
+      </div>
+      
+      <button class="bg-white text-[#0404D7] font-inter-medium flex items-center justify-center whitespace-nowrap w-[224px] h-[52px] py-5 px-8 gap-[10px] rounded-[80px] text-base leading-[150%] tracking-normal box-border hover:bg-opacity-90 transition-all duration-200">
+        VIEW ALL SERVICES
+        <span class="text-lg ml-1 leading-none">⤥</span>
+      </button>
+    </div>
+
+    <div class="relative w-full flex-1 min-h-0 mt-2 flex justify-center">
+      <div class="relative w-[1548px]">
+        <button id="scrollLeft" class="absolute left-0 -translate-y-1/2 top-1/2 z-10 bg-white/20 backdrop-blur hover:bg-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 -ml-5 border border-white/30">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        
+        <button id="scrollRight" class="absolute right-0 -translate-y-1/2 top-1/2 z-10 bg-white/20 backdrop-blur hover:bg-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 -mr-5 border border-white/30">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <div id="scrollContainer" class="flex flex-row gap-4 overflow-x-auto pb-4 pt-1 pl-0 pr-6 scroll-smooth items-start no-scrollbar w-[1548px] h-[672px] opacity-100">
+          
+          <!-- Card 1 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <img src="pict/ourservice1.png" alt="Mountain Vista" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">01</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Mountain Vista</h3>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <img src="pict/oursevice2.png" alt="Ocean Blue" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">02</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Ocean Blue</h3>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <img src="pict/oursevice3.png" alt="Forest Whisper" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">03</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Forest Whisper</h3>
+            </div>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <img src="pict/oursevice4.png" alt="City Lights" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">04</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">City Lights</h3>
+            </div>
+          </div>
+          
+          <!-- Card 5 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-red-400 to-rose-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">05</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Abstract Art</h3>
+            </div>
+          </div>
+          
+          <!-- Card 6 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-indigo-400 to-purple-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">06</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Night Sky</h3>
+            </div>
+          </div>
+          
+          <!-- Card 7 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">07</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Desert Dunes</h3>
+            </div>
+          </div>
+          
+          <!-- Card 8 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-teal-400 to-cyan-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">08</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Frozen Peak</h3>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-lime-400 to-green-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">09</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Cherry Blossom</h3>
+            </div>
+          </div>
+          
+          <!-- Card 10 -->
+          <div class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl" style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-violet-400 to-fuchsia-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">10</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Butterfly Effect</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="w-full bg-black h-[121px] shrink-0 relative overflow-hidden">
+    <div class="w-full h-full relative">
+      <div class="absolute left-1/2 -translate-x-1/2 fade-edges w-[1440px] h-10 top-10 opacity-100 overflow-hidden">
+        <div class="flex items-center justify-between w-full h-full px-8 gap-[25px]">
+          <img src="pict/logofooter.png" alt="Logo 1" class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+          <img src="pict/logofooter.png" alt="Logo 2" class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+          <img src="pict/logofooter.png" alt="Logo 3" class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+          <img src="pict/logofooter.png" alt="Logo 4" class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+          <img src="pict/logofooter.png" alt="Logo 5" class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+        </div>
+      </div>
+      
+      <div class="w-full h-full flex items-center px-8 md:px-16 lg:px-24 relative z-10">
+        <div class="h-8 border-l border-white/20 mr-8"></div>
+        <div class="flex-1"></div>
+        <div class="h-8 border-r border-white/20 ml-8"></div>
+      </div>
+      
+      <div class="border-t border-white/10 w-full absolute bottom-0"></div>
+    </div>
+  </footer>
+
+  <script>
+    const scrollContainer = document.getElementById('scrollContainer');
+    const scrollLeftBtn = document.getElementById('scrollLeft');
+    const scrollRightBtn = document.getElementById('scrollRight');
+    
+    const scrollAmount = 372 + 16;
+    
+    scrollLeftBtn.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+    
+    scrollRightBtn.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
