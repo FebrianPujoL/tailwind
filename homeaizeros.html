@@ -1,161 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aizeros · Digital Agency</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    
-    <style>
-        @font-face {
-            font-family: 'ClashDisplay';
-            src: url('font/ClashDisplay-Semibold.woff') format('woff');
-            font-weight: 600;
-            font-style: normal;
-        }
-        
-        html, body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        
-        .scrollbar-custom::-webkit-scrollbar {
-            height: 12px;
-        }
-        .scrollbar-custom::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 9999px;
-        }
-        .scrollbar-custom::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 9999px;
-            border: 2px solid rgba(0, 0, 0, 0.2);
-        }
-        .scrollbar-custom::-webkit-scrollbar-thumb:hover {
-            background: rgba(255, 255, 255, 0.8);
-        }
-    </style>
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        clash: ['ClashDisplay', 'sans-serif'],
-                    },
-                },
-            },
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aizeros · Digital Agency</title>
+  <link rel="stylesheet" href="src/output.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/mian.css">
+
 </head>
+
 <body class="font-sans antialiased bg-black text-white">
-    
+
+  <div class="absolute inset-0 w-full h-full z-0">
+    <img src="pict/bghome.png" class="w-full h-full object-cover rotate-180" alt="background">
+    <div class="absolute inset-0 bg-black/15"></div>
+    <div class="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-black/10"></div>
+    <div class="absolute inset-0 backdrop-blur-[2px]"></div>
+  </div>
+
+  <div class="w-[1440px] relative z-10 mx-auto my-0">
+    <div class="px-16 py-8 relative h-full">
+
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center h-[53px]">
+          <img src="pict/logoaizeros.png" alt="Aizeros Logo" class="w-[243px] h-[38.12px] object-contain">
+        </div>
+
+        <div class="flex items-center space-x-2 h-[53px]">
+          <a href="#"
+            class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">Home</a>
+          <a href="#"
+            class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">Services</a>
+          <a href="#"
+            class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">Portfolio</a>
+          <a href="#"
+            class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">About
+            us</a>
+        </div>
+
+        <div class="flex items-center space-x-3 h-[53px]">
+          <a href="#"
+            class="text-white font-semibold hover:text-white/80 transition-all duration-300 flex items-center justify-center whitespace-nowrap text-[15px] leading-[100%] tracking-tight">Contact
+            Us</a>
+          <img src="pict/bulet2 5.svg" alt="" class="w-auto h-auto">
+        </div>
+      </nav>
+
+      <div class="border-b border-white/10 mt-4"></div>
+
+      <div class="grid grid-cols-2 gap-20 mt-12">
+        <div class="relative">
+          <div class="relative">
+            <div
+              class="mt-1 font-clash font-semibold text-white/95 select-none drop-shadow-lg [text-shadow:0_0_30px_rgba(0,0,0,0.5)] text-[278px] leading-[232px] tracking-[-0.03em] w-[1033px] h-[186px] -ml-2">
+              Aizeros<span class="text-[80px] align-top ml-1">®</span></div>
+
+            <div class="flex items-center gap-4 mt-16 ml-1 mb-[168px]">
+              <div class="w-[31px] h-0 border-t-2 border-white rotate-180"></div>
+
+              <div>
+                <div
+                  class="font-clash font-semibold text-white/80 uppercase drop-shadow-lg text-[18px] leading-[100%] tracking-normal w-[195px] h-3">
+                  DIGITAL AGENCY</div>
+                <div class="w-[195px] h-px bg-white/20 mt-3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 max-w-md">
+            <p class="text-white/90 drop-shadow-lg mb-28 text-[20px] leading-[28px] tracking-tight font-semibold">/ We
+              help startups and businesses grow faster through AI-driven UI/UX design, branding, development, and
+              digital marketing — all under one roof.</p>
+          </div>
+
+          <div class="flex items-center gap-4 mt-8">
+            <a href="#"
+              class="group flex items-center justify-between text-white font-semibold transition-all duration-300 border border-white/60 hover:bg-white hover:text-black w-[168px] h-12 rounded-[1000px] py-2 pl-5 pr-1 text-sm tracking-tight">
+              <span>View Our Works</span>
+              <div class="w-6 h-6 rounded-full flex items-center justify-center group-hover:bg-black/20">
+                <div class="w-[6px] h-[6px] rounded-full bg-white group-hover:bg-black"></div>
+              </div>
+            </a>
+
+            <a href="#"
+              class="group flex items-center justify-between text-white font-semibold transition-all duration-300 border border-white/60 hover:bg-white hover:text-black w-[168px] h-12 rounded-[1000px] py-2 pl-5 pr-1 text-sm tracking-tight">
+              <span class="text-base leading-6 tracking-tighter font-semibold">Connect Us</span>
+              <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#111111]">
+                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 4.5H14M14 4.5L10 0.5M14 4.5L10 8.5" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="relative"></div>
+      </div>
+    </div>
+    <div class="absolute bottom-16 right-12 z-20 w-[690px]">
+      <div class="overflow-x-auto pb-4 scrollbar-custom">
+        <div class="flex space-x-4 min-w-max">
+          <div
+            class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px]">
+            <img src="pict/scrollbghome.png" alt="scroll background" class="w-full h-full object-cover">
+          </div>
+
+          <div
+            class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+            <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+          </div>
+
+          <div
+            class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+            <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+          </div>
+
+          <div
+            class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+            <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+          </div>
+
+          <div
+            class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+            <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+          </div>
+
+          <div
+            class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
+            <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-0 right-0 w-100 h-100 bg-white/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
+  </div>
+  <div class="h-[200px] w-full"></div>
+  <div class="w-[1280px] max-w-[1280px] mx-auto px-[60px] py-[40px] relative bg-[#0a0a0c]">
+
+    <div class="absolute top-[40px] right-[60px] z-10">
+      <div class="flex items-center gap-3">
+        <div
+          class="w-11 h-11 rounded-full bg-black flex items-center justify-center shadow-lg border border-[#333333] hover:scale-105 transition duration-200">
+          <i class="fab fa-x-twitter text-white text-lg"></i>
+        </div>
+        <div
+          class="w-11 h-11 rounded-full bg-[#1e88e5] flex items-center justify-center shadow-lg border border-[#64b5f6] hover:scale-105 transition duration-200">
+          <i class="fas fa-basketball-ball text-white text-lg"></i>
+        </div>
+        <div
+          class="w-11 h-11 rounded-full bg-[#0a66c2] flex items-center justify-center shadow-lg border border-[#3b8bc2] hover:scale-105 transition duration-200">
+          <i class="fab fa-linkedin-in text-white text-lg"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-8 mt-16 md:mt-8">
+      <h1 class="text-5xl md:text-6xl font-semibold tracking-tight text-white leading-[1.1]">Meet The Minds<br>Behind
+        The Work</h1>
+    </div>
+
+    <div class="flex gap-8 mb-10">
+      <div
+        class="w-[600px] h-[600px] rounded-[48px] border border-[#3a3a45] shadow-2xl flex-shrink-0 bg-cover bg-center"
+        style="background-image: url('pict/aboutus.png');"></div>
+
+      <div class="flex-1 flex flex-col">
+        <p class="text-[#d0d0d0] text-2xl leading-relaxed font-normal">
+          At Aizeros, we bring together designers, strategists, and makers to craft bold, thoughtful digital experiences
+          made with care and curiosity.
+        </p>
+
+        <div class="flex justify-end mt-2 opacity-30">
+          <div class="flex -space-x-2">
+            <div class="w-10 h-10 rounded-full bg-[#3a3a45] border-2 border-[#4a4a55]"></div>
+            <div class="w-10 h-10 rounded-full bg-[#4a4a55] border-2 border-[#5a5a65]"></div>
+          </div>
+        </div>
+
+        <div class="flex w-full gap-[1px] mt-8">
+          <div class="w-1/2 bg-white rounded-[24px] p-6 flex flex-col h-[340px] shadow-2xl">
+            <div class="font-clash text-gray-900 font-semibold text-[48px] leading-[48px] tracking-[-0.03em]">
+              20+
+            </div>
+            <div class="font-poppins text-gray-600 text-sm leading-5">
+              Trusted Partner
+            </div>
+
+            <div class="flex justify-center items-center w-full mt-12 mb-12">
+              <img src="pict/partneraboutus.png" alt="Partner Logos" class="max-w-[100%] h-auto brightness-95">
+            </div>
+
+            <div class="flex justify-center mt-2">
+              <a href="#"
+                class="bg-linear-to-r from-[#0013FF] to-[#11B7FC] text-white font-semibold px-6 py-3 rounded-full text-sm hover:opacity-90 transition shadow-lg flex items-center gap-2">
+                Book a call <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="w-1/2 bg-white rounded-[24px] p-1 h-[340px] shadow-2xl">
+            <div class="w-full h-full rounded-[20px] bg-cover bg-center"
+              style="background-image: url('pict/ezendofact.png');"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white/16 px-10 py-6 w-full mt-10">
+      <div class="flex justify-between items-center w-full">
+        <div
+          class="relative flex-1 text-center px-4 before:content-[''] before:absolute before:right-[-2px] before:top-[15%] before:h-[70%] before:w-[1px] before:bg-linear-to-b before:from-transparent before:via-white/30 before:to-transparent">
+          <div class="text-5xl font-semibold text-white tracking-tight">15</div>
+          <div class="text-sm font-medium text-[#a0a0a0] uppercase tracking-wider mt-1">Industries Served</div>
+        </div>
+        <div
+          class="relative flex-1 text-center px-4 before:content-[''] before:absolute before:right-[-2px] before:top-[15%] before:h-[70%] before:w-[1px] before:bg-linear-to-b before:from-transparent before:via-white/30 before:to-transparent">
+          <div class="text-5xl font-semibold text-white tracking-tight">4+</div>
+          <div class="text-sm font-medium text-[#a0a0a0] uppercase tracking-wider mt-1">Years of Experience</div>
+        </div>
+        <div
+          class="relative flex-1 text-center px-4 before:content-[''] before:absolute before:right-[-2px] before:top-[15%] before:h-[70%] before:w-[1px] before:bg-linear-to-b before:from-transparent before:via-white/30 before:to-transparent">
+          <div class="text-5xl font-semibold text-white tracking-tight">100+</div>
+          <div class="text-sm font-medium text-[#a0a0a0] uppercase tracking-wider mt-1">Happy Clients</div>
+        </div>
+        <div class="flex-1 text-center px-4">
+          <div class="text-5xl font-semibold text-white tracking-tight">40+</div>
+          <div class="text-sm font-medium text-[#a0a0a0] uppercase tracking-wider mt-1">Projects Delivered</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="h-[200px] w-full"></div>
+  <div class="w-full max-w-7xl mx-auto px-4 md:px-8 pt-8 md:pt-12 flex flex-col h-auto relative overflow-hidden"
+    style="min-height: 843px;">
+
+    <!-- BACKGROUND GRADIENT BIRU -->
     <div class="absolute inset-0 w-full h-full z-0">
-        <img src="pict/bghome.png" class="w-full h-full object-cover rotate-180" alt="background">
-        <div class="absolute inset-0 bg-black/15"></div>
-        <div class="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-black/10"></div>
-        <div class="absolute inset-0 backdrop-blur-[2px]"></div>
+      <div
+        style="background: linear-gradient(0deg, #0404D7, #0404D7), linear-gradient(98.58deg, #11B7FC -37.97%, #0013FF 19.46%, #0013FF 81.26%, #11B7FC 114.31%);"
+        class="w-full h-full"></div>
+      <div class="absolute inset-0 bg-black/15"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-black/10"></div>
+      <div class="absolute inset-0 backdrop-blur-[2px]"></div>
     </div>
 
-    <div class="w-[1440px] h-[932px] relative z-10 mx-auto my-0 overflow-hidden">
-        <div class="px-16 py-8 relative h-full">
+    <div
+      class="flex items-center justify-between mx-auto w-full shrink-0 mb-6 md:mb-8 max-w-[1320px] h-[52px] opacity-100 relative z-10">
 
-            <nav class="flex items-center justify-between">
-                <div class="flex items-center h-[53px]">
-                    <img src="pict/logoaizeros.png" alt="Aizeros Logo" class="w-[243px] h-[38.12px] object-contain">
-                </div>
+      <div class="flex items-center w-[574px] h-[43px] opacity-100">
+        <h1
+          class="font-clash font-semibold text-white leading-none tracking--3 text-left w-full text-[64px] leading-[64px]">
+          Our Services
+        </h1>
+      </div>
 
-                <div class="flex items-center space-x-2 h-[53px]">
-                    <a href="#" class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">Home</a>
-                    <a href="#" class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">Services</a>
-                    <a href="#" class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">Portfolio</a>
-                    <a href="#" class="text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-[18px] leading-[100%] tracking-normal h-10">About us</a>
-                </div>
-
-                <div class="flex items-center space-x-3 h-[53px]">
-                    <a href="#" class="text-white font-semibold hover:text-white/80 transition-all duration-300 flex items-center justify-center whitespace-nowrap text-[15px] leading-[100%] tracking-tight">Contact Us</a>
-                    <img src="pict/bulet2 5.svg" alt="" class="w-auto h-auto">
-                </div>
-            </nav>
-
-            <div class="border-b border-white/10 mt-4"></div>
-
-            <div class="grid grid-cols-2 gap-20 mt-12">
-                <div class="relative">
-                    <div class="relative">
-                        <div class="font-clash font-semibold text-white/95 select-none drop-shadow-lg [text-shadow:0_0_30px_rgba(0,0,0,0.5)] text-[278px] leading-[232px] tracking-[-0.03em] w-[1033px] h-[186px] -ml-2">Aizeros®</div>
-                        
-                        <div class="flex items-center gap-4 mt-8 ml-1 mb-52">
-                            <div class="w-[31px] h-0 border-t-2 border-white rotate-180"></div>
-                            
-                            <div>
-                                <div class="font-clash font-semibold text-white/80 uppercase drop-shadow-lg text-[18px] leading-[100%] tracking-normal w-[195px] h-3">DIGITAL AGENCY</div>
-                                <div class="w-[195px] h-px bg-white/20 mt-3"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-8 max-w-md">
-                        <p class="text-white/90 drop-shadow-lg mb-28 text-[20px] leading-[28px] tracking-tight font-semibold">/ We help startups and businesses grow faster through AI-driven UI/UX design, branding, development, and digital marketing — all under one roof.</p>
-                    </div>
-
-                    <div class="flex items-center gap-4 mt-8">
-                        <a href="#" class="group flex items-center justify-between text-white font-semibold transition-all duration-300 border border-white/60 hover:bg-white hover:text-black w-[168px] h-12 rounded-[1000px] py-2 pl-5 pr-1 text-sm tracking-tight">
-                            <span>View Our Works</span>
-                            <div class="w-6 h-6 rounded-full flex items-center justify-center group-hover:bg-black/20">
-                                <div class="w-[6px] h-[6px] rounded-full bg-white group-hover:bg-black"></div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="group flex items-center justify-between text-white font-semibold transition-all duration-300 border border-white/60 hover:bg-white hover:text-black w-[168px] h-12 rounded-[1000px] py-2 pl-5 pr-1 text-sm tracking-tight">
-                            <span class="text-base leading-6 tracking-tighter font-semibold">Connect Us</span>
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#111111]">
-                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 4.5H14M14 4.5L10 0.5M14 4.5L10 8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="relative"></div>
-            </div>
-        </div>
-        <div class="absolute bottom-16 right-12 z-20 w-[690px]">
-            <div class="overflow-x-auto pb-4 scrollbar-custom">
-                <div class="flex space-x-4 min-w-max">
-                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px]">
-                        <img src="pict/scrollbghome.png" alt="scroll background" class="w-full h-full object-cover">
-                    </div>
-
-                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
-                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
-                    </div>
-                    
-                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
-                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
-                    </div>
-                    
-                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
-                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
-                    </div>
-                    
-                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
-                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
-                    </div>
-                    
-                    <div class="w-[321px] h-[200px] shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-[24px] overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px] flex items-center justify-center">
-                        <img src="pict/aizeroinbox.png" alt="aizeros in box" class="w-full h-full object-contain p-4">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="absolute bottom-0 right-0 w-100 h-100 bg-white/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
+      <button
+        class="bg-white text-[#0404D7] font-inter-medium flex items-center justify-center whitespace-nowrap w-[224px] h-[52px] py-5 px-8 gap-[10px] rounded-[80px] text-base leading-[150%] tracking-normal box-border hover:bg-opacity-90 transition-all duration-200">
+        VIEW ALL SERVICES
+        <span class="text-lg ml-1 leading-none">⤥</span>
+      </button>
     </div>
+
+    <div class="relative w-full flex-1 min-h-0 mt-2 flex justify-center">
+      <div class="relative w-[1548px]">
+        <button id="scrollLeft"
+          class="absolute left-0 -translate-y-1/2 top-1/2 z-10 bg-white/20 backdrop-blur hover:bg-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 -ml-5 border border-white/30">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button id="scrollRight"
+          class="absolute right-0 -translate-y-1/2 top-1/2 z-10 bg-white/20 backdrop-blur hover:bg-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 -mr-5 border border-white/30">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <div id="scrollContainer"
+          class="flex flex-row gap-4 overflow-x-auto pb-4 pt-1 pl-0 pr-6 scroll-smooth items-start no-scrollbar w-[1548px] h-[672px] opacity-100">
+
+          <!-- Card 1 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <img src="pict/ourservice1.png" alt="Mountain Vista" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">01</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Mountain Vista</h3>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <img src="pict/oursevice2.png" alt="Ocean Blue" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">02</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Ocean Blue</h3>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <img src="pict/oursevice3.png" alt="Forest Whisper" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">03</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Forest Whisper</h3>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <img src="pict/oursevice4.png" alt="City Lights" class="w-full h-full object-cover">
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">04</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">City Lights</h3>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-red-400 to-rose-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">05</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Abstract Art</h3>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-indigo-400 to-purple-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">06</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Night Sky</h3>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-amber-400 to-yellow-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">07</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Desert Dunes</h3>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-teal-400 to-cyan-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">08</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Frozen Peak</h3>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div class="w-full h-full bg-linear-to-br from-lime-400 to-green-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">09</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Cherry Blossom</h3>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div
+            class="w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-[120px]">
+            <div class="w-[372px] h-[438px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl"
+              style="width: 372px; height: 438px; margin-left: -1rem; margin-top: -1rem;">
+              <div
+                class="w-full h-full bg-linear-to-br from-violet-400 to-fuchsia-400 flex items-center justify-center">
+                <span class="text-5xl"></span>
+              </div>
+            </div>
+            <div class="flex items-end justify-between h-[26px] w-full">
+              <span class="font-clash font-medium text-white/60 text-sm">10</span>
+              <h3 class="font-clash font-semibold text-base leading-tight">Butterfly Effect</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="w-full bg-black h-[121px] shrink-0 relative overflow-hidden">
+    <div class="w-full h-full relative">
+      <div class="absolute left-1/2 -translate-x-1/2 fade-edges w-[1440px] h-10 top-10 opacity-100 overflow-hidden">
+        <div class="flex items-center justify-between w-full h-full px-8 gap-[25px]">
+          <img src="pict/logofooter.png" alt="Logo 1"
+            class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+          <img src="pict/logofooter.png" alt="Logo 2"
+            class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+          <img src="pict/logofooter.png" alt="Logo 3"
+            class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+          <img src="pict/logofooter.png" alt="Logo 4"
+            class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+          <img src="pict/logofooter.png" alt="Logo 5"
+            class="h-[31.360477447509766px] w-auto object-contain brightness-90">
+        </div>
+      </div>
+
+      <div class="w-full h-full flex items-center px-8 md:px-16 lg:px-24 relative z-10">
+        <div class="h-8 border-l border-white/20 mr-8"></div>
+        <div class="flex-1"></div>
+        <div class="h-8 border-r border-white/20 ml-8"></div>
+      </div>
+
+      <div class="border-t border-white/10 w-full absolute bottom-0"></div>
+    </div>
+  </footer>
+  <div class="h-[200px] w-full"></div>
+
+  <div class="w-[1440px] max-w-full mx-auto bg-[#0B1120]">
+
+    <div class="flex flex-col items-start gap-12 py-[90px] px-[90px]">
+
+      <div class="flex flex-row items-start justify-between w-full flex-wrap gap-6">
+        <div class="w-[600px] max-w-full">
+          <h1 class="font-clash font-semibold text-white text-[64px] leading-[1.2] tracking-[-0.02em]">
+            Turning Challenges into Wins
+          </h1>
+        </div>
+        <div class="w-[458px] max-w-full">
+          <p class="font-inter font-normal text-base leading-relaxed tracking-[-0.02em] text-white/60">
+            We crafted and launched a data-backed Meta (Facebook & Instagram) ads campaign for a skincare brand
+            targeting women aged 18–35 in the UAE. The creative angle focused on natural ingredients and seasonal
+            skincare problems. Result: 5.3x ROAS, 1,800+ orders in 6 weeks.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-start gap-12 w-full">
+
+        <div class="flex flex-row items-start justify-between w-full gap-8 flex-wrap">
+          <div class="flex flex-col items-start gap-4 w-[580px] max-w-full">
+            <div class="w-full h-[416px] rounded-[26px] shadow-2xl overflow-hidden bg-transparent">
+              <img src="pict/case1.png" alt="Case 1" class="w-full h-full object-cover"
+                onerror="this.style.display='none';">
+            </div>
+            <div class="flex flex-col items-start gap-1">
+              <span class="font-clash font-medium text-white text-2xl tracking-[-0.02em]">Taskman</span>
+              <span class="font-inter text-base leading-none tracking-[-0.02em] text-white/60">Task Manager Mobile
+                App</span>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-4 w-[580px] max-w-full">
+            <div class="w-full h-[416px] rounded-[26px] shadow-2xl overflow-hidden bg-transparent">
+              <img src="pict/case2.png" alt="Case 2" class="w-full h-full object-cover"
+                onerror="this.style.display='none';">
+            </div>
+            <div class="flex flex-col items-start gap-1">
+              <span class="font-clash font-medium text-white text-2xl tracking-[-0.02em]">Taskman</span>
+              <span class="font-inter text-base leading-none tracking-[-0.02em] text-white/60">Task Manager Mobile
+                App</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row items-start justify-between w-full gap-8 flex-wrap">
+          <div class="flex flex-col items-start gap-4 w-[580px] max-w-full">
+            <div class="w-full h-[416px] rounded-[26px] shadow-2xl overflow-hidden bg-transparent">
+              <img src="pict/case3.png" alt="Case 3" class="w-full h-full object-cover"
+                onerror="this.style.display='none';">
+            </div>
+            <div class="flex flex-col items-start gap-1">
+              <span class="font-clash font-medium text-white text-2xl tracking-[-0.02em]">Taskman</span>
+              <span class="font-inter text-base leading-none tracking-[-0.02em] text-white/60">Task Manager Mobile
+                App</span>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-4 w-[580px] max-w-full">
+            <div class="w-full h-[416px] rounded-[26px] shadow-2xl overflow-hidden bg-transparent">
+              <img src="pict/case4.png" alt="Case 4" class="w-full h-full object-cover"
+                onerror="this.style.display='none';">
+            </div>
+            <div class="flex flex-col items-start gap-1">
+              <span class="font-clash font-medium text-white text-2xl tracking-[-0.02em]">Taskman</span>
+              <span class="font-inter text-base leading-none tracking-[-0.02em] text-white/60">Task Manager Mobile
+                App</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[200px] w-full"></div>
+
+      <div class="w-full">
+        <div
+          class="w-full max-w-[1260px] h-auto md:h-[642px] bg-gradient-to-r from-[#11B7FC] via-[#0013FF] to-[#11B7FC] rounded-[32px] p-5">
+          <div class="flex flex-col md:flex-row w-full h-full gap-6">
+            <div class="w-full md:w-1/2 flex items-center justify-center md:justify-start pl-0 md:pl-5">
+              <div class="w-[548px] max-w-full h-[572px] rounded-[22px] overflow-hidden">
+                <img src="pict/founder.png" alt="Founder" class="w-full h-full object-cover transform scale-x-[-1]">
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 flex items-center justify-center md:justify-start pr-0 md:pr-5">
+              <div class="w-full max-w-md text-white px-4 md:px-0">
+                <h2 class="font-clash font-semibold text-[64px] leading-[64px] tracking-[-0.02em] text-white/80 mb-2">
+                  Meet the founder</h2>
+                <h1 class="font-clash font-semibold text-2xl leading-[34px] tracking-[-0.02em] capitalize mb-4">The
+                  Vision Behind Aizeros</h1>
+                <p class="font-inter font-medium text-base leading-[26px] text-white/90 mb-6 max-w-[478px]">Aizeros was
+                  founded with a simple idea: build digital solutions that actually work for businesses — not just look
+                  good.</p>
+                <p class="font-inter font-medium text-base leading-[26px] text-white/90 mb-8 max-w-[472px]">With a
+                  strong background in design, technology, and growth, our founder believes great products are built
+                  where strategy, user experience, and innovation meet — with a clear, results-first approach.</p>
+                <button
+                  class="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition">Learn
+                  More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[200px] w-full"></div>
+
+      <div class="w-full">
+        <div
+          class="w-full max-w-[1312px] h-auto md:h-[636px] bg-[#0B1120] border-2 border-white/20 rounded-[32px] p-5 shadow-2xl backdrop-blur-sm">
+
+          <div class="flex flex-col lg:flex-row w-full h-full gap-8 lg:gap-[150px]">
+
+            <div class="w-full lg:w-[526px] h-auto lg:h-[590px] flex flex-col justify-between gap-6">
+              <div class="flex flex-col">
+                <div class="w-[363px] flex flex-col gap-5 opacity-100">
+                  <div
+                    class="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 w-fit">
+                    <span class="w-2 h-2 rounded-full bg-gradient-to-r from-[#11B7FC] to-[#0013FF]"></span>
+                    <span class="text-white/70 text-sm font-inter font-medium tracking-wide">Testimonial</span>
+                  </div>
+                  <h2 class="font-clash font-semibold text-white text-[64px] leading-[72px] tracking-[-0.03em]">
+                    What Our Clients Says
+                  </h2>
+                </div>
+
+                <div class="h-[160px]"></div>
+
+                <div class="flex flex-col gap-2">
+                  <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-[#FD3A25]" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                    </svg>
+                    <svg class="w-5 h-5 text-[#FD3A25]" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                    </svg>
+                    <svg class="w-5 h-5 text-[#FD3A25]" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                    </svg>
+                    <svg class="w-5 h-5 text-[#FD3A25]" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                    </svg>
+                    <svg class="w-5 h-5 text-[#FD3A25]" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                    </svg>
+                  </div>
+
+                  <div class="w-[526px] h-[84px] opacity-100">
+                    <p class="font-inter font-medium text-[18px] leading-[28px] text-white/70">
+                      We shipped our first copilot in 7 weeks and cut support tickets by 31%. The eval dashboards made
+                      every decision obvious.
+                    </p>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="w-[4px] h-[36px] bg-[#0000C4] opacity-100 rounded-r-[4px]"></div>
+
+                    <div
+                      class="w-[290px] h-[36px] flex items-center gap-1 py-2 px-4 opacity-100 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
+                      <span class="text-white/80 text-sm font-inter font-medium whitespace-nowrap">Elena Ruiz</span>
+                      <span
+                        class="font-inter font-normal text-[14px] leading-5 tracking-normal text-white/60 whitespace-nowrap">|
+                        Cantos SaaS's VP Product</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="w-[526px] h-[100px] flex items-center justify-between py-6 opacity-100 border-t border-white/20 mt-6">
+                  <div class="flex items-center gap-3">
+                    <button id="prevBtn"
+                      class="w-[52px] h-[52px] flex items-center justify-center rounded-[80px] bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-gradient-to-r hover:from-[#0013FF] hover:to-[#11B7FC] hover:border-transparent group">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                      </svg>
+                    </button>
+                    <button id="nextBtn"
+                      class="w-[52px] h-[52px] flex items-center justify-center rounded-[80px] bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-gradient-to-r hover:from-[#0013FF] hover:to-[#11B7FC] hover:border-transparent group">
+                      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <span id="currentPage" class="font-inter font-semibold text-base text-white">01</span>
+                    <span class="font-inter font-normal text-base text-white/40">/03</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full lg:w-[400px] flex flex-col items-end">
+                <div
+                  class="w-full lg:w-[400px] h-[400px] lg:h-[500px] bg-gradient-to-br from-[#11B7FC]/10 to-[#0013FF]/10 rounded-[22px] overflow-hidden backdrop-blur-sm border border-white/20 shadow-2xl transition hover:scale-[1.02] group">
+                  <div class="w-full h-full flex flex-col items-center justify-center relative bg-[#0F172A]">
+                    <div
+                      class="absolute inset-0 bg-gradient-to-tr from-[#0013FF]/20 via-transparent to-[#11B7FC]/20 opacity-60">
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center justify-center gap-4 p-6 text-center">
+                      <div
+                        class="w-24 h-24 rounded-2xl bg-white/5 backdrop-blur-md flex items-center justify-center border border-white/20 shadow-lg">
+                        <svg class="w-12 h-12 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="font-clash font-semibold text-2xl text-white tracking-[-0.02em]">Horizon Series</h3>
+                      <p class="font-inter text-white/60 text-sm max-w-[250px]">Timeless craftsmanship for the modern
+                        era
+                      </p>
+                      <div class="mt-4 flex items-center gap-1 text-[#11B7FC] text-sm font-inter font-medium">
+                        <span>Discover</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="h-[90px] w-full"></div>
+
+    </div>
+  </div>
+  <script>
+    const scrollContainer = document.getElementById('scrollContainer');
+    const scrollLeftBtn = document.getElementById('scrollLeft');
+    const scrollRightBtn = document.getElementById('scrollRight');
+
+    const scrollAmount = 372 + 16;
+
+    scrollLeftBtn.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
+    scrollRightBtn.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 </body>
+
 </html>
