@@ -702,7 +702,7 @@
                   </svg>
                 </div>
               </div>
-              <p class="answer font-inter text-white/60 text-sm mt-3 hidden">Lorem ipsum dolor sit amet, consectetur
+              <p class="answer f ont-inter text-white/60 text-sm mt-3 hidden">Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
 
@@ -781,33 +781,115 @@
               <p class="answer font-inter text-white/60 text-sm mt-3 hidden">Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-[200px] w-full"></div>
+      <div
+        class="w-full max-w-[1320px] h-auto md:h-[492px] bg-gradient-to-r from-[#0013FF] to-[#11B7FC] rounded-[30px] shadow-2xl mt-8 flex flex-col items-center justify-center text-center px-6 mx-auto"
+        style="border-radius: 30px;">
 
+        <h2 class="font-clash font-semibold text-white max-w-[850px] mx-auto"
+          style="font-weight: 600; font-size: 74px; line-height: 80px; letter-spacing: -0.03em; text-align: center;">
+          Let's Build Something That Drives Real Results
+        </h2>
+
+        <p class="font-inter text-white/90 text-base md:text-lg max-w-2xl mx-auto mt-6 mb-8" style="line-height: 28px;">
+          Whether you’re launching a new product or scaling an existing one, Aizeros helps you turn ideas into
+          high-performing digital experiences.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-4">
+          <button
+            class="px-8 py-3 bg-[#11B7FC] text-white font-inter font-semibold rounded-full hover:shadow-xl transition-all duration-300 hover:scale-105">
+            Get a Quote
+          </button>
+          <button
+            class="px-8 py-3 bg-transparent border-2 border-white text-white font-inter font-semibold rounded-full hover:bg-white/10 transition-all duration-300">
+            Contact us
+          </button>
+        </div>
+      </div>
+
+      <div class="h-[200px] w-full"></div>
+
+      <div
+        class="w-full max-w-[1312px] h-auto md:h-[636px] bg-[#0B1120] border-2 border-white/20 rounded-[32px] p-5 shadow-2xl backdrop-blur-sm">
+        <div class="flex flex-col lg:flex-row w-full h-full gap-8 lg:gap-[150px]">
+
+          <div class="w-full lg:w-[526px] h-auto lg:h-[590px] flex flex-col justify-between gap-6">
+            <div class="flex flex-col">
+
+              <div class="flex flex-col gap-10" style="width: 466px; height: 159px; gap: 40px; opacity: 1;">
+
+                <div
+                  class="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 w-fit">
+                  <span class="w-2 h-2 rounded-full bg-gradient-to-r from-[#11B7FC] to-[#0013FF]"></span>
+                  <span class="text-white/70 text-sm font-inter font-medium tracking-wide">Let's connect with Us</span>
+                </div>
+
+                <h2 class="font-clash font-semibold text-white"
+                  style="font-weight: 600; font-size: 64px; line-height: 64px; letter-spacing: -0.03em; text-transform: capitalize;">
+                  Have a project in mind?
+                </h2>
+
+              </div>
+
+              <div class="w-[526px] h-[84px] opacity-100 mt-20">
+                <p class="font-inter font-medium text-[18px] leading-[28px] text-white/70">
+                  Tell us about your project whether it's a website, SEO, or marketing.
+                </p>
+              </div>
+
+              <div class="w-[526px] h-[84px] opacity-100 mt-10">
+                <p class="font-inter font-medium text-[18px] leading-[28px] text-white/70">
+                  24/7 Full Time Support.
+                </p>
+                <p class="font-inter font-medium text-[18px] mt-5 leading-[28px] text-white/70">
+                  24/7 Full Time Support.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="w-full lg:w-[400px] flex flex-col items-end" style="padding-top: 64px;">
+            <div
+              class="w-full lg:w-[400px] h-[400px] lg:h-[500px] bg-gradient-to-br from-[#11B7FC]/10 to-[#0013FF]/10 rounded-[22px] overflow-hidden backdrop-blur-sm border border-white/20 shadow-2xl transition hover:scale-[1.02] group">
+              <div class="w-full h-full flex items-center justify-center relative bg-[#0F172A]">
+                <div
+                  class="absolute inset-0 bg-gradient-to-tr from-[#0013FF]/20 via-transparent to-[#11B7FC]/20 opacity-60">
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
-    <script>
-      const scrollContainer = document.getElementById('scrollContainer');
-      const scrollLeftBtn = document.getElementById('scrollLeft');
-      const scrollRightBtn = document.getElementById('scrollRight');
 
-      const scrollAmount = 372 + 16;
+  </div>
+  <script>
+    const scrollContainer = document.getElementById('scrollContainer');
+    const scrollLeftBtn = document.getElementById('scrollLeft');
+    const scrollRightBtn = document.getElementById('scrollRight');
 
-      scrollLeftBtn.addEventListener('click', () => {
-        scrollContainer.scrollBy({
-          left: -scrollAmount,
-          behavior: 'smooth'
-        });
+    const scrollAmount = 372 + 16;
+
+    scrollLeftBtn.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
       });
+    });
 
-      scrollRightBtn.addEventListener('click', () => {
-        scrollContainer.scrollBy({
-          left: scrollAmount,
-          behavior: 'smooth'
-        });
+    scrollRightBtn.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
       });
-    </script>
+    });
+  </script>
 </body>
 
 </html>
