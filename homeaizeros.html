@@ -801,11 +801,11 @@
 
         <div class="flex flex-col sm:flex-row gap-4 mt-4">
           <button
-            class="px-8 py-3 bg-[#11B7FC] text-white font-inter font-semibold rounded-full hover:shadow-xl transition-all duration-300 hover:scale-105">
+            class="px-8 py-3 bg-[#11B7FC] text-white font-inter font-semibold rounded-full hover:shadow-xl  cursor-pointer transition-all duration-300 hover:scale-105">
             Get a Quote
           </button>
           <button
-            class="px-8 py-3 bg-transparent border-2 border-white text-white font-inter font-semibold rounded-full hover:bg-white/10 transition-all duration-300">
+            class="px-8 py-3 bg-transparent border-2 border-white text-white font-inter font-semibold rounded-full cursor-pointer hover:bg-white/10 transition-all duration-300">
             Contact us
           </button>
         </div>
@@ -813,8 +813,7 @@
 
       <div class="h-[200px] w-full"></div>
 
-      <div
-        class="w-full max-w-[1312px] h-auto md:h-[636px] bg-[#0B1120] border-2 border-white/20 rounded-[32px] p-5 shadow-2xl backdrop-blur-sm">
+      <div class="w-full max-w-[1312px] h-auto md:h-[636px] bg-[#0B1120]">
         <div class="flex flex-col lg:flex-row w-full h-full gap-8 lg:gap-[150px]">
 
           <div class="w-full lg:w-[526px] h-auto lg:h-[590px] flex flex-col justify-between gap-6">
@@ -828,44 +827,83 @@
                   <span class="text-white/70 text-sm font-inter font-medium tracking-wide">Let's connect with Us</span>
                 </div>
 
-                <h2 class="font-clash font-semibold text-white"
-                  style="font-weight: 600; font-size: 64px; line-height: 64px; letter-spacing: -0.03em; text-transform: capitalize;">
+                <h2 class="font-clash font-semibold text-white text-[64px] leading-[64px] -tracking-[0.03em] capitalize">
                   Have a project in mind?
                 </h2>
-
               </div>
 
               <div class="w-[526px] h-[84px] opacity-100 mt-20">
-                <p class="font-inter font-medium text-[18px] leading-[28px] text-white/70">
+                <p class="font-inter font-thin text-[18px] leading-[28px] text-white/70">
                   Tell us about your project whether it's a website, SEO, or marketing.
                 </p>
               </div>
 
               <div class="w-[526px] h-[84px] opacity-100 mt-10">
-                <p class="font-inter font-medium text-[18px] leading-[28px] text-white/70">
+                <p class="font-inter font-semibold text-[18px] leading-[28px]">
                   24/7 Full Time Support.
                 </p>
-                <p class="font-inter font-medium text-[18px] mt-5 leading-[28px] text-white/70">
+                <p class="font-inter font-semibold text-[18px] mt-5 leading-[28px]">
                   24/7 Full Time Support.
                 </p>
               </div>
             </div>
-
-
           </div>
-          <div class="w-full lg:w-[400px] flex flex-col items-end" style="padding-top: 64px;">
-            <div
-              class="w-full lg:w-[400px] h-[400px] lg:h-[500px] bg-gradient-to-br from-[#11B7FC]/10 to-[#0013FF]/10 rounded-[22px] overflow-hidden backdrop-blur-sm border border-white/20 shadow-2xl transition hover:scale-[1.02] group">
-              <div class="w-full h-full flex items-center justify-center relative bg-[#0F172A]">
-                <div
-                  class="absolute inset-0 bg-gradient-to-tr from-[#0013FF]/20 via-transparent to-[#11B7FC]/20 opacity-60">
+          <div class="flex flex-col items-end">
+            <div class="w-[535px] h-[714px] rounded-[24px] p-[44px] bg-[#FFFFFF38]">
+              <p class="font-inter font-medium text-[14px] leading-[20px] pb-5">Your Email*</p>
+              <input type="email" placeholder="Enter the email"
+                class="w-full h-[50px] border border-white/30 rounded-lg px-4 py-2 text-white font-inter">
+              <p class="font-inter font-medium text-[14px] leading-[20px] py-5">Your Phone*
+              <p>
+                <input type="tel" placeholder="Enter the phone number"
+                  class="w-full h-[50px] border border-white/30 rounded-lg px-4 py-2 text-white font-inter">
+              </p>
+              <p class="font-inter font-medium text-[14px] leading-[20px] pt-5 ">message</p>
+              <textarea placeholder=""
+                class="w-full h-[80px] border-b border-white/30 bg-transparent px-4 py-2 text-white font-inter">
+              </textarea>
+              <div class="mt-15">
+                <span
+                  class="mr-2 px-5 py-2 text-sm text-white/70 border border-white/20 rounded-full hover:border-white transition-all font-medium font-inter">&lt
+                  $2,000</span>
+                <span
+                  class="mx-2 px-5 py-2 text-sm text-white/70 border border-white/20 rounded-full hover:border-white transition-all font-medium font-inter">$2,000
+                  - $5,000</span>
+                <span
+                  class="mx-2 px-5 py-2 text-sm text-white/70 border border-white/20 rounded-full hover:border-white transition-all font-medium font-inter">$5,000
+                  - $20,000</span>
+
+                <div class="mt-6">
+                  <span
+                    class="mr-2 px-5 py-2 text-sm text-white/70 border border-white/20 rounded-full hover:border-white transition-all font-medium font-inter">$20,000
+                    - $20,000</span>
+                  <span
+                    class="mr-2 px-5 py-2 text-sm text-white/70 border border-white/20 rounded-full hover:border-white transition-all font-medium font-inter">&gt
+                    $20,000</span>
                 </div>
+                <button
+                  class="mt-8 w-full px-8 py-3 bg-gradient-to-r from-[#0013FF] to-[#11B7FC] border-2 border-none text-white font-inter font-semibold rounded-full cursor-pointer hover:bg-white/10 transition-all duration-300">
+                  Send message
+                </button>
               </div>
+
             </div>
           </div>
 
         </div>
       </div>
+      <div class="h-[200px] w-full"></div>
+      <div class="inline-flex items-center gap-2  backdrop-blur-sm  px-4 py-1.5 w-fit">
+        <span class="w-2 h-2 rounded-full bg-[#0114FF]"></span>
+        <span class="text-[#0114FF] text-sm font-inter font-medium tracking-wide">Our blog</span>
+      </div>
+      <h2 class="font-clash font-semibold text-white text-[64px] mt-[-40px] leading-[64px] -tracking-[0.03em] capitalize">
+        Blogs & Articles
+      </h2>
+      <p class="font-inter font-thin text-[18px] leading-[28px] text-white/70">Tell us about your project whether it's a website, SEO, or marketing.
+      </p>
+
+
     </div>
 
   </div>
