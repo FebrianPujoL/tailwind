@@ -1,8 +1,22 @@
 @import "tailwindcss";
+@import "./main.css";
 
-@font-face{
-        font-family: 'ClashDisplay';
-        src: url('font/ClashDisplay-Semibold.woff') format('woff');
-        font-weight: 600;
-        font-style: normal;
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('font/ClashDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@theme {
+  --color-darknavy: #0B1120;
+  --font-clash: 'ClashDisplay';
+  --color-glasswhite: #FFFFFF38;
+  --spacing-53: 53px;
+  --spacing-168: 168px;
+  --spacing-44: 44px;
+  --text-16: 64px;
+}
+@utility AKU{
+          height: 200px;
 }
