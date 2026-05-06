@@ -9,14 +9,20 @@
 }
 
 @theme {
-  --color-darknavy: #0B1120;
-  --font-clash: 'ClashDisplay';
-  --color-glasswhite: #FFFFFF38;
-  --spacing-53: 53px;
-  --spacing-168: 168px;
-  --spacing-44: 44px;
-  --text-16: 64px;
-}
-@utility AKU{
-          height: 200px;
+    --color-darknavy: #0B1120;
+    --color-glasswhite: #FFFFFF38;
+  
+    --font-clash: 'ClashDisplay';
+  
+    --spacing-53: 53px;
+    --spacing-44: 44px;
+    --spacing-168: 168px;
+  
+    --text-sm: 14px;
+    --text-xl: 64px;
+    --text-base: 16px;
+    --text-lg: 18px;
+    --text-xs: 10px
+    --text-32: 32px
+    --text-64: 64px
 }
