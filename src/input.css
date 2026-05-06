@@ -19,10 +19,9 @@
     --spacing-168: 168px;
   
     --text-sm: 14px;
-    --text-xl: 64px;
     --text-base: 16px;
     --text-lg: 18px;
-    --text-xs: 10px
-    --text-32: 32px
-    --text-64: 64px
-}
+    --text-xs: 10px;
+    --text-32: 32px;
+    --text-64: 64px;
+} 
