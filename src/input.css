@@ -1,27 +1,91 @@
 @import "tailwindcss";
-@import "./main.css";
 
 @font-face {
-  font-family: 'ClashDisplay';
-  src: url('font/ClashDisplay-Semibold.woff') format('woff');
+  font-family: "Inter";
+  src: url("./font/inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./font/inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("./font/ClashDisplay-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @theme {
-    --color-darknavy: #0B1120;
-    --color-glasswhite: #FFFFFF38;
-  
-    --font-clash: 'ClashDisplay';
-  
-    --spacing-53: 53px;
-    --spacing-44: 44px;
-    --spacing-168: 168px;
-  
-    --text-sm: 14px;
-    --text-base: 16px;
-    --text-lg: 18px;
-    --text-xs: 10px;
-    --text-32: 32px;
-    --text-64: 64px;
-} 
+  --color-darknavy: #0B1120;
+  --color-glasswhite: #FFFFFF38;
+
+  --font-inter: "Inter", sans-serif;
+  --font-clash: "ClashDisplay";
+
+  --spacing-53: 53px;
+  --spacing-44: 44px;
+  --spacing-168: 168px;
+
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xs: 10px;
+  --text-32: 32px;
+  --text-64: 64px;
+}
+
+@layer components {
+  .price-tag {
+    @apply px-2 py-2 text-base text-white/70 border border-white/20 rounded-full hover:border-white transition-all font-medium font-inter;
+  }
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 12px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 9999px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tracking--3 {
+  letter-spacing: -0.03em;
+}
+
+.fade-edges {
+  mask-image: linear-gradient(90deg, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 15%, black 85%, transparent);
+}
