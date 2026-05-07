@@ -1,0 +1,158 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 12px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 9999px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tracking--3 {
+  letter-spacing: -0.03em;
+}
+
+.fade-edges {
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+}
+.stat-item::before {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+}
+@layer components {
+  .full-img {
+    @apply w-full h-full object-cover;
+  }
+  .price-tag {
+    @apply px-2 py-2 text-base text-white/70 border border-white/20 rounded-full hover:border-white transition-all font-medium font-inter;
+  }
+  .nav-home {
+    @apply text-white/80 font-semibold hover:text-black hover:bg-white transition-all duration-300 whitespace-nowrap flex items-center justify-center rounded-full px-6 text-lg leading-[100%] tracking-normal h-10;
+  }
+  .main-card {
+    @apply w-[320px] h-50 shrink-0 border border-white/30 shadow-xl shadow-black/40 rounded-3xl overflow-hidden bg-[#FFFFFF33] backdrop-blur-[44px];
+  }
+  .circle-1 {
+    @apply w-11 h-11 rounded-full flex items-center justify-center shadow-lg border;
+  }
+  .circle-2 {
+    @apply w-10 h-10 rounded-full border-[#4a4a55];
+  }
+  .bg-circle-2 {
+    @apply w-full h-full rounded-full object-cover;
+  }
+  .stat-item {
+    @apply relative flex-1 text-center px-4;
+  }
+
+  .stat-number {
+    @apply text-5xl font-semibold text-white tracking-tight;
+  }
+
+  .stat-label {
+    @apply text-base font-medium text-[#a0a0a0] uppercase tracking-wider mt-1;
+  }
+  .service-card-top {
+    @apply w-[372px] h-[480px] shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative mt-30;
+  }
+  .service-card-bottom {
+    @apply w-93 h-120 shrink-0 bg-white/10 backdrop-blur border border-white/20 rounded-xl p-4 flex flex-col hover:border-white/50 transition-all duration-200 relative;
+  }
+  .service-card-img {
+    @apply w-[372px] h-[440px] rounded-xl mb-0 overflow-hidden -ml-4 -mt-4 rounded-t-xl;
+  }
+  .card-footer {
+    @apply flex items-end justify-between h-[26px] w-full;
+  }
+  .card-number {
+    @apply font-clash font-medium text-white/60 text-base;
+  }
+  .card-title {
+    @apply font-clash font-semibold text-base leading-tight;
+  }
+  .logo-footer {
+    @apply h-[31px] w-auto object-contain brightness-90;
+  }
+  .promote-row {
+    @apply flex flex-row items-start justify-between w-full gap-8 flex-wrap;
+  }
+  .container-img-promote {
+    @apply flex flex-col items-start gap-4 w-145 max-w-full;
+  }
+  .img-promote {
+    @apply w-full h-104 rounded-[26px] shadow-2xl overflow-hidden bg-transparent;
+  }
+  .title-promote {
+    @apply font-clash font-medium text-white text-2xl tracking-[-0.02em];
+  }
+  .subtitle-promote {
+    @apply font-inter text-base leading-none tracking-[-0.02em] text-white/60;
+  }
+  .social-media-card {
+    @apply w-[309px] h-[398px] bg-white rounded-xl opacity-100 flex flex-col relative;
+  }
+  .social-media-content {
+    @apply w-[295px] h-auto  rounded-xl mx-auto relative;
+  }
+  .social-media-header {
+    @apply w-10 h-10 rounded-full  border-2 border-white bg-white;
+  }
+  .social-media-img {
+    @apply w-[295px] h-[295px] rounded-xl;
+  }
+  .social-media-footer {
+    @apply flex gap-3 py-2 justify-between items-center;
+  }
+  .social-media-vector {
+    @apply w-8 h-8 rounded-full  border-2 bg-white;
+  }
+}
