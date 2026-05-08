@@ -155,4 +155,13 @@ body {
   .social-media-vector {
     @apply w-8 h-8 rounded-full  border-2 bg-white;
   }
+  .text-field {
+    @apply w-full h-[50px] border border-white/30 rounded-lg px-4 py-2 text-white font-inter;
+  }
+  .footer-title {
+    @apply font-inter font-normal text-base leading-6 tracking-[-0.02em] pb-5;
+  }
+  .foote-list {
+    @apply hover:underline font-semibold text-[32px] leading-[42px] tracking-[-0.03em];
+  }
 }

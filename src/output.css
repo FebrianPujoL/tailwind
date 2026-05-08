@@ -516,9 +516,6 @@
   .h-\[43px\] {
     height: 43px;
   }
-  .h-\[50px\] {
-    height: 50px;
-  }
   .h-\[52px\] {
     height: 52px;
   }
@@ -558,14 +555,8 @@
   .h-\[270px\] {
     height: 270px;
   }
-  .h-\[295px\] {
-    height: 295px;
-  }
   .h-\[340px\] {
     height: 340px;
-  }
-  .h-\[398px\] {
-    height: 398px;
   }
   .h-\[400px\] {
     height: 400px;
@@ -639,9 +630,6 @@
   .w-7xl {
     width: var(--container-7xl);
   }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
-  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -704,12 +692,6 @@
   }
   .w-\[290px\] {
     width: 290px;
-  }
-  .w-\[295px\] {
-    width: 295px;
-  }
-  .w-\[309px\] {
-    width: 309px;
   }
   .w-\[363px\] {
     width: 363px;
@@ -927,8 +909,11 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
-  .gap-28 {
-    gap: calc(var(--spacing) * 28);
+  .gap-32 {
+    gap: calc(var(--spacing) * 32);
+  }
+  .gap-48 {
+    gap: calc(var(--spacing) * 48);
   }
   .gap-\[1px\] {
     gap: 1px;
@@ -1034,9 +1019,6 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
-  }
-  .rounded-lg {
-    border-radius: var(--radius-lg);
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
@@ -1601,9 +1583,6 @@
   .text-\[24px\] {
     font-size: 24px;
   }
-  .text-\[32px\] {
-    font-size: 32px;
-  }
   .text-\[48px\] {
     font-size: 48px;
   }
@@ -1670,10 +1649,6 @@
   .leading-\[34px\] {
     --tw-leading: 34px;
     line-height: 34px;
-  }
-  .leading-\[42px\] {
-    --tw-leading: 42px;
-    line-height: 42px;
   }
   .leading-\[48px\] {
     --tw-leading: 48px;
@@ -2134,13 +2109,6 @@
         @supports (color: color-mix(in lab, red, red)) {
           color: color-mix(in oklab, var(--color-white) 80%, transparent);
         }
-      }
-    }
-  }
-  .hover\:underline {
-    &:hover {
-      @media (hover: hover) {
-        text-decoration-line: underline;
       }
     }
   }
@@ -2716,6 +2684,47 @@ html, body {
     border-style: var(--tw-border-style);
     border-width: 2px;
     background-color: var(--color-white);
+  }
+  .text-field {
+    height: 50px;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
+    font-family: var(--font-inter);
+    color: var(--color-white);
+  }
+  .footer-title {
+    padding-bottom: calc(var(--spacing) * 5);
+    font-family: var(--font-inter);
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    --tw-tracking: -0.02em;
+    letter-spacing: -0.02em;
+  }
+  .foote-list {
+    font-size: 32px;
+    --tw-leading: 42px;
+    line-height: 42px;
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    --tw-tracking: -0.03em;
+    letter-spacing: -0.03em;
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
   }
 }
 @font-face {
